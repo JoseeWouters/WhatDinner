@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JoseeWouters/WhatDinner/issues"
   },
-  "homepage": "https://github.com/JoseeWouters/WhatDinner#readme"
+  "homepage": "https://github.com/JoseeWouters/WhatDinner#readme",
+  "devDependencies": {
+    "sass": "^1.19.0"
+  }
 }
