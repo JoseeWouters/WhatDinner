@@ -1,6 +1,6 @@
 <template>
-    <main>
-      <h1>What Dinner?</h1>
+    <main class="main">
+      <h1 class="title">What Dinner?</h1>
       <p>
           Can't decide what to have for dinner? Store your favorite meals in the app and let it decide for you!
       </p>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-main {
+.main {
     padding: 1em;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -54,7 +54,7 @@ main {
     }
 }
 
-h1 {
+.title {
     font-size: 3rem;
 }
 </style>

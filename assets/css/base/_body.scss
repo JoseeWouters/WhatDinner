@@ -19,8 +19,8 @@
 body {
     color: $secondary;
     font-family: 'Open Sans', sans-serif;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
     padding: 1em;
     background: url('/images/home-background-brooke-lark.jpg') no-repeat left center /cover;
 }
@@ -37,4 +37,8 @@ a {
 img {
     display: block;
     max-width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
 }
