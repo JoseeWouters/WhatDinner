@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Lovelo';
+    font-weight: 900;
+    src: url('~assets/fonts/lovelo-black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url('~assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $secondary;
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 1em;
+    background: url('/images/home-background-brooke-lark.jpg') no-repeat left center /cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+    font-family: 'Lovelo', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

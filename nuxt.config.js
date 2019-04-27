@@ -1,5 +1,3 @@
-import pkg from './package'
-
 export default {
   mode: 'universal',
 
@@ -7,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'What Dinner',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Can\'t decide what to have for dinner? This app helps you choose.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -27,6 +25,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~assets/css/style.scss'
   ],
 
   /*
@@ -39,7 +38,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      'assets/css/base/_variables.scss',
+      ]
+  },
 
   /*
   ** Build configuration
