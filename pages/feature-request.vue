@@ -10,6 +10,7 @@
             <label for="Name">
                 Your name:
             </label>
+             <label>Your Email: <input type="email" name="email" /></label>
             <input type="text" name="name">
             <label for="message">
                 Your request:
