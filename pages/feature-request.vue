@@ -1,7 +1,7 @@
 <template>
     <main class="main">
         <h1 class="title">Feature request</h1>
-        <form name="request" action="/pages/thanks" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <form name="request" action="/thanks" method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <input type="hidden" name="form-name" value="request" />
             <fieldset class="hidden">
                 <label for="bot-field">Don't fill this in if you're human</label>
