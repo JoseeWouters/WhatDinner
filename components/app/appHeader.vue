@@ -5,6 +5,7 @@
             <div class="nav-items">
                 <nuxt-link to="/feature-request" class="nav-item">Feature request</nuxt-link>
                 <nuxt-link to="/privacy-policy" class="nav-item">Privacy policy</nuxt-link>
+                <nuxt-link to="/about" class="nav-item">About</nuxt-link>
             </div>
         </nav>
     </header>
