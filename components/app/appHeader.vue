@@ -2,7 +2,10 @@
     <header class="header">
         <nav class="top-nav">
             <nuxt-link to="/"><icon-what-dinner/></nuxt-link>
-            <nuxt-link to="/feature-request">Feature request</nuxt-link>
+            <div class="nav-items">
+                <nuxt-link to="/feature-request" class="nav-item">Feature request</nuxt-link>
+                <nuxt-link to="/privacy-policy" class="nav-item">Privacy policy</nuxt-link>
+            </div>
         </nav>
     </header>
 </template>
@@ -20,19 +23,17 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    background-color: #fff;
+    background-color: $primary;
+    color: $support;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     padding: 1em;
 }
 
 .logo {
-    fill: $primary;
     height: 40px;
+    fill: $support;
 }
 
 .top-nav {
@@ -41,5 +42,9 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 1em;
 }
 </style>
