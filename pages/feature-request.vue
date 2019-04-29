@@ -1,8 +1,7 @@
 <template>
     <div class="container">
         <h1 class="title">Feature request</h1>
-        <p>Do you have a request for a feature that's not yet in the app?</p>
-        <p>Fill out this form and I'll see what I can do!</p>
+        <p>Do you have a request for a feature that's not yet in the app? Fill out this form and I'll see what I can do!</p>
         <form class="form" name="request" action="/thanks" method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <input type="hidden" name="form-name" value="request" />
             <fieldset class="hidden">
@@ -21,7 +20,7 @@
                 </label>
             </fieldset>
 
-            <label for="message">
+            <label for="message" class="message">
                 <span>Your request</span>
                 <textarea name="message" rows="1"></textarea>
             </label>
@@ -37,12 +36,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+p {
+    max-width: 470px;
+}
 .form {
     display: flex;
     flex-direction: column;
     background-color: $support;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
     margin: 1em;
+    max-width: 100%;
+    
+    @media (max-width: 568px) {
+        margin: 1em 0;
+    }
 
     .hidden {
         display: none;
@@ -64,6 +71,17 @@ export default {
     label {
         margin: 1em;
 
+        @media (max-width: 568px) {
+            &:not(.message) {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+ 
+
         span {
             display: block;
             margin-bottom: .5em;
@@ -82,6 +100,7 @@ export default {
 
     .top {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 

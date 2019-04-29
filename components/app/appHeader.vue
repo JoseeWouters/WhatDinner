@@ -34,6 +34,7 @@ export default {
 .logo {
     height: 40px;
     fill: $support;
+    margin-right: 1em;
 }
 
 .top-nav {
