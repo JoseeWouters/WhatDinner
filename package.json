@@ -1,23 +1,23 @@
 {
-  "name": "WhatDinner",
+  "name": "what-dinner",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Website for What Dinner App",
+  "author": "Josee Wouters",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JoseeWouters/WhatDinner.git"
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JoseeWouters/WhatDinner/issues"
-  },
-  "homepage": "https://github.com/JoseeWouters/WhatDinner#readme",
   "devDependencies": {
-    "sass": "^1.19.0"
+    "@nuxtjs/style-resources": "^0.1.2",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
   }
 }
