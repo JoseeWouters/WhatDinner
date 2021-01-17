@@ -17,9 +17,7 @@
               </div>
               <div class="badge">
                   <a href="https://play.google.com/store/apps/details?id=nl.joseewouters.dinner">
-                      <img src="/images/google-play-badge.png" alt="Get it on Google Play"></a>
-                  <a href="https://play.google.com/store/apps/details?id=nl.joseewouters.dinner">
-                      <p>Download for Android</p>
+                      <img src="/images/google-play-badge.png" alt="Get it on Google Play">
                   </a>
               </div>
           </section>
