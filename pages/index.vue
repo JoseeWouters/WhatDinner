@@ -15,11 +15,6 @@
                       <p>Download for iOS</p>
                   </a>
               </div>
-              <div class="badge">
-                  <a href="https://play.google.com/store/apps/details?id=nl.joseewouters.dinner">
-                      <img src="/images/google-play-badge.png" alt="Get it on Google Play">
-                  </a>
-              </div>
           </section>
       </div>
 </template>
